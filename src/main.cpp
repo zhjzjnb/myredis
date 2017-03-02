@@ -48,6 +48,7 @@ int main (int argc, char **argv) {
     redisAsyncSetDisconnectCallback(c,disconnectCallback);
     redisAsyncCommand(c, NULL, NULL, "SET key %b", argv[argc-1], strlen(argv[argc-1]));
     redisAsyncCommand(c, getCallback, (char*)"end-1", "GET key");
+    printf("uv begin run loop\n");
     uv_run(loop, UV_RUN_DEFAULT);
     return 0;
 }

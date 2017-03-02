@@ -25,6 +25,7 @@
          [ 'OS=="linux"', {
               'libraries':[
                 './libs/ubuntu/libuv.a',
+		'./libs/ubuntu/libhiredis.a',
               ],
               'link_settings': {
                 'libraries': [ '-ldl', '-lrt' ],
