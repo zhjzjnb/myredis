@@ -27,7 +27,7 @@
                 './libs/ubuntu/libuv.a',
               ],
               'link_settings': {
-                'libraries': [ '-ldl', '-lrt', '-lcurl' ],
+                'libraries': [ '-ldl', '-lrt' ],
               },
               'cflags':['-g','-fstack-protector','-fstack-protector-all'],
             },
