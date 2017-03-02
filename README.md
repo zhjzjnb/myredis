@@ -7,3 +7,4 @@
 * system version
 * Ubuntu 12.04 LTS x86_64
 * Mac OS X 10.11.6 86_64
+* in mac os it will call connectCallback,but in ubuntu it does not.
